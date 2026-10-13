@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabel Nilai Mahasiswa</title>
+  <style>
+    
+/* Warna header tabel */
+th {
+    background-color: #28558A;
+    color: white;
+}
+
+/* Warna kolom nama */
+.nama {
+    background-color: #E2E8F0;
+}
+
+/* Warna nilai Semester 1 */
+.semester1 {
+    background-color: #EAF6FC;
+}
+
+/* Warna nilai Semester 2 */
+.semester2 {
+    background-color: #EDFBF0;
+}
+
+/* Warna keterangan Lulus */
+.lulus {
+    color: #4F7863;
+    font-weight: bold;
+}
+
+/* Warna keterangan Remedial */
+.remedial {
+    color: #B34450;
+    font-weight: bold;
+}
+
+/* Warna baris rata-rata kelas */
+.rata-rata td {
+    background-color: #EDF2F7;
+}
+
+/* Warna header tabel kehadiran */
+.kehadiran th {
+    background-color: #28558A;
+    color: white;
+}
+
+/* Warna isi tabel kehadiran */
+.kehadiran td {
+    background-color: white;
+}
+
+    </style>
+    
+</head>
+
+<body>
+
+<div class="container">
+    <table border="1">
+        <thead>
+            <tr>
+                <th rowspan="2">Nama</th>
+                <th colspan="3">Semester 1</th>
+                <th colspan="3">Semester 2</th>
+                <th rowspan="2">Keterangan</th>
+                <th rowspan="2">Catatan Kehadiran</th>
+            </tr>
+            <tr>
+                <th>Tugas</th>
+                <th>UTS</th>
+                <th>UAS</th>
+                <th>Tugas</th>
+                <th>UTS</th>
+                <th>UAS</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <!-- Mahasiswa 1 -->
+            <tr>
+                <td class="nama">Taufik<br>Azfar</td>
+                <td class="semester1">85</td>
+                <td class="semester1">80</td>
+                <td class="semester1">88</td>
+                <td class="semester2">90</td>
+                <td class="semester2">85</td>
+                <td class="semester2">92</td>
+                <td class="lulus">Lulus</td>
+                <td class="catatan">
+                    <table class="kehadiran">
+                        <tr>
+                            <th>Bulan</th>
+                            <th>Hadir</th>
+                            <th>Izin</th>
+                            <th>Alpa</th>
+                        </tr>
+                        <tr>
+                            <td>Agustus</td>
+                            <td>14</td>
+                            <td>1</td>
+                            <td>0</td>
+                        </tr>
+                        <tr>
+                            <td>September</td>
+                            <td>13</td>
+                            <td>0</td>
+                            <td>1</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+
+            <!-- Mahasiswa 2 -->
+            <tr>
+                <td class="nama">Budi<br>Santoso</td>
+                <td class="semester1">60</td>
+                <td class="semester1">55</td>
+                <td class="semester1">58</td>
+                <td class="semester2">65</td>
+                <td class="semester2">60</td>
+                <td class="semester2">62</td>
+                <td class="remedial">Remedial</td>
+                <td class="catatan">Sering terlambat</td>
+            </tr>
+
+            <!-- Mahasiswa 3 -->
+            <tr>
+                <td class="nama">Citra<br>Lestari</td>
+                <td class="semester1">92</td>
+                <td class="semester1">90</td>
+                <td class="semester1">95</td>
+                <td class="semester2">94</td>
+                <td class="semester2">91</td>
+                <td class="semester2">96</td>
+                <td class="lulus">Lulus</td>
+                <td class="catatan">Mahasiswa berprestasi</td>
+            </tr>
+
+            <!-- Rata-rata kelas -->
+            <tr class="rata-rata">
+                <td>Rata-rata<br>Kelas</td>
+                <td colspan="3">75,7</td>
+                <td colspan="3">79,8</td>
+                <td colspan="2">77,8 (keseluruhan)</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
